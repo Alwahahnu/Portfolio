@@ -1,0 +1,31 @@
+.titre{
+    text-align: center;
+    background-color: darkblue;
+    color:white;
+    border-radius: 0px 0px 15px 15px;
+}
+img{
+    border-radius: 15px 15px 0px 0px;
+}
+.joke{
+    border-radius:15px;
+    background-color: #1D4851;
+    color:white;
+    text-align: center;
+    margin-top:240px;
+    margin-bottom: 50px;
+}
+.desktop{
+    display:block;
+}
+.smartphone{
+    display:none;
+}
+@media screen and (max-width: 768px) {
+    .desktop{
+        display:none;
+    }
+    .smartphone{
+        display:block;
+    }
+}

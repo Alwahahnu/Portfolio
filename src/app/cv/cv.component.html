@@ -1,0 +1,161 @@
+<script src="assets/js/custom.js"></script>
+
+<div class="container">
+    <div class="row header">
+        <div class="show col-xl-1 col-md-2">
+            <img src="assets/images/1Chris-wankul-droite.png" width="190" height="190" style="margin-top: 38px;">
+        </div>
+
+        <div class="col-xl-3 col-md-10 offset-xl-4" >
+            <h1 class="center">
+                <span>{{nom| uppercase}}</span><br>
+                <span class="capitalize">{{prenom}}</span><br>
+                <span>{{age}} ans</span><br>
+                <span>{{profession}}</span><br>
+            </h1>
+        </div>
+        <div class="hidden center col-xl-12 col-md-2 offset-md-1 col-lg-2 ">
+            <img src="assets/images/1Chris-wankul-droite.png" width="190" height="190" style="margin-top: 38px;">
+        </div>
+    </div>
+    <div class="row">
+        <div class="partie_grise col-12 col-lg-4">
+
+
+            <div class="box offset-md-2 col-md-8 offset-lg-0 col-lg-12">
+                <h2>COMPÉTENCES :</h2>
+                <div>
+                    <input type='checkbox' checked disabled/>Développer de nouveaux sites Internet et application Web.
+                </div>
+                <div>
+                    <input type='checkbox' checked disabled/>Maintenir des sites déjà existants.
+                </div>
+                <div>
+                    <input type='checkbox' checked disabled/>Modifier des sites Internet.
+                </div>
+                <div>
+                    <input type='checkbox' checked disabled/>S'autoformer sur de nouvelles technologies.
+                </div>
+            </div>
+
+            <div class="box offset-md-2 col-md-8 offset-lg-0 col-lg-12">
+                <h2>QUALITÉS :</h2>
+                <ul>
+                    <li>Autonome</li>
+                    <li>Créatif</li>
+                    <li>Persévérant</li>
+                    <li>Esprit Synthétique</li>
+                    <li>Autodidacte</li>
+                </ul> 
+            </div>
+            <div class="box offset-md-2 col-md-8 offset-lg-0 col-lg-12">
+                <h2>LANGAGES :</h2>
+                <ul class="list-none">
+                    <li>HTML5 
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                            <span class="sr-only">80% Complete</span>
+                        </div></li>
+                    <li>JavaScript/jQuery
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                            <span class="sr-only">60% Complete</span>
+                        </div></li>
+                    <li>PHP
+                        <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+                            <span class="sr-only">65% Complete</span>
+                        </div></li>
+                    <li>SQL
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            <span class="sr-only">60% Complete</span>
+                        </div></li>
+                    <li>CSS
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <span class="sr-only">70% Complete</span>
+                        </div></li>
+                    <li>Ajax
+                        <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                            <span class="sr-only">55% Complete</span>
+                        </div></li>
+                </ul>
+            </div>
+            <div class="box offset-md-2 col-md-8 offset-lg-0 col-lg-12">
+                <h2>FRAMEWORKS</h2>
+                <ul class="list-none">
+                    <li>Angular 4</li>
+                    <li>Bootstrap 4</li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class=" offset-md-2 col-md-8 offset-lg-0 col-lg-12" >
+                <h2>MOYEN DE LOCOMOTION</h2>
+                <ul class="list-none">
+                    <li>Permis B</li>
+                    <li>Véhicule personnel</li>
+                </ul>
+            </div>
+            <div class="center box" >
+                <h2>RÉSEAUX SOCIAUX</h2>
+                <a href="https://twitter.com/?request_context=signup">
+                    <img src="assets/images/twitter.png" alt="twitter" height="42" width="42"/>
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100018795968689">
+                    <img src="assets/images/facebook.png" alt="facebook" height="42" width="42"/>
+                </a>
+            </div>
+        </div>
+        <!-----------------------partie 2-------------------------------->
+        <div class="col-lg-7 offset-lg-1"> 
+            <h2>EXPÉRIENCES PROFESSIONNELLES</h2>
+            <div class="box_vert animated fadeInRight">
+
+                <div>
+                    <ul class="experiences" *ngFor="let experience of experiences">
+                        <li>Entreprise : {{experience.entreprise}}</li>
+                        <li>Missions : {{experience.mission}}</li>
+                        <li>Debut : {{experience.date_debut}}</li>
+                        <li>Fin : {{experience.date_fin}}</li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="box"></div>
+            <div class="animated fadeInLeft">
+                <h2>DIPLÔMES</h2>
+            </div>
+            <div class="box"></div>
+            <h3>2017</h3>
+            <div class="box_bleu animated fadeInLeft">
+
+                <div>
+                    <h3>TITRE PROFESSIONNEL DE DÉVELOPPEUR WEB (en cours)</h3>
+                    <p>Aformac</p>
+
+                    <h3>CERTIFICATION PROFESSIONNELLE DE PROGRAMATION DE SITE WEB (en cours)</h3> 
+                    <p>Conservatoire Nationale des Arts et Métiers</p>
+                </div>
+            </div>
+            <div class="box"></div>
+            <h3>2014</h3>
+            <div class="box_bleu animated fadeInRight">
+
+                <div>
+                    <h3>CAPACITÉ EN DROIT : diplôme en 2 ans</h3>
+                    <p>Faculté de Droit de Brive</p>
+
+                </div>
+            </div>
+            <div class="box"></div>
+            <h3>2010</h3>
+            <div class="box_bleu animated fadeInLeft">
+                <h3>2010</h3>
+                <div class="texte-align">
+                    <h3>BAC PRO EN RÉALISATION D'OUVRAGE CHAUDRONNÉE</h3>
+                    <p>Lycée Professionnel Lavoisier</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+

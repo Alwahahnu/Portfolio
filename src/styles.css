@@ -1,0 +1,12 @@
+body {
+    background-color: #c1d2d6;
+    background-size: 100% ;
+    
+ }   
+@media screen and (max-width: 640px) {
+  .bloc {
+    
+  }
+}
+
+
